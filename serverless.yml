@@ -1,0 +1,29 @@
+service: serverkless
+provider:
+  name: aws
+  region: ap-south-1
+  timeout: 30
+  stage: dev
+  
+plugins:
+  - serverless-offline
+functions: 
+
+  userslist:
+    handler: controller/user.getUser
+    events: 
+      - http: 
+          path: user
+          method: get
+          cors: true
+
+  employeelist:
+    handler: controller/employee.assign
+    events: 
+      - http: 
+          path: employee/assign
+          method: post
+          
+  
+  
+ 

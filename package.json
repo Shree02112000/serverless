@@ -1,0 +1,19 @@
+{
+  "name": "task1",
+  "version": "1.0.0",
+  "description": "sequelize task ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "offline": "sls offline start --CacheInvalidations"
+  },
+  "keywords": [
+    "crud"
+  ],
+  "author": "shree",
+  "license": "ISC",
+  "dependencies": {
+    "serverless": "^3.27.0",
+    "serverless-offline": "^12.0.4"
+  }
+}
